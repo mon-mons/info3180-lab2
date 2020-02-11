@@ -1,0 +1,39 @@
+
+{% extends "base.html" %}
+
+
+{% block main %}
+    <div id = "container">
+        <div id="main">
+            <div id = "top">
+                <div id = "photo">
+                    <img src="{{url_for('static', filename = 'ME.png')}}" alt="Picture of me">
+                </div>
+
+                <div id = "details">
+                    <h2>Monique Satchwell</h2>
+                    <p>@monnie_mon</p>
+                    <p>St.Thomas, Jamaica</p>
+                    <p>Joined {{ date }}</p>
+                </div>
+            </div>
+
+            <div id = "bottom">
+                <div id = "bio">
+                    <p>I am a jovial, intellingent and talented young lady who loves website design and development.
+                      Contact me if you want to work together on a new project.</p>
+                </div>
+
+                <div id = "activity">
+                    <div id="posts"><p><b>77</b><br>Posts</p></div>
+                    <div id="following"><p><b>100</b><br>Following</p></div>
+                    <div id="followers"><p><b>500</b><br>Followers</p></div>
+                </div>
+
+                <div id = "follow-btn">
+                    <button>Follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
